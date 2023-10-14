@@ -1,13 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace Music_Bands.Entities
+namespace BandsWebAPI.Entities
 {
     public class Musician
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int MusicianId { get; set; }
+ 
+        public int Id { get; set; }
         [Required]
         [MaxLength(50)]
         public string Name { get; set; }
