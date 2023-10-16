@@ -32,13 +32,6 @@ namespace BandsWebAPI
                 }
         
 
-                //if (!_dbContext.Roles.Any())
-                //{
-                //    var roles = GetRoles();
-                //    _dbContext.Roles.AddRange(roles);
-                //    _dbContext.SaveChanges();
-                //}
-
                 if (!_dbContext.Bands.Any())
                 {
                     var bands = GetBands();
@@ -47,27 +40,6 @@ namespace BandsWebAPI
                 }
             }
         }
-
-        //private IEnumerable<Role> GetRoles()
-        //{
-        //    var roles = new List<Role>()
-        //    {
-        //        new Role()
-        //        {
-        //            Name = "User"
-        //        },
-        //        new Role()
-        //        {
-        //        Name = "Manager"
-        //    },
-        //        new Role()
-        //        {
-        //            Name = "Admin"
-        //        },
-        //    };
-
-        //    return roles;
-        //}
 
         private IEnumerable<Band> GetBands()
         {
@@ -99,8 +71,9 @@ namespace BandsWebAPI
                     },
                     Musicians = new List<Musician> 
                     { 
-                        new Musician(){Name = "James Maynard Keenan", Role = "Vocal"}
-                    
+                        new Musician(){Name = "James Maynard Keenan", Role = "Vocal"},
+                        new Musician(){Name = "Adam Jones", Role = "Guitar"}
+
                     },
                 },
                 new Band()
@@ -130,8 +103,9 @@ namespace BandsWebAPI
                     },
                     Musicians = new List<Musician>
                     {
-                        new Musician(){Name = "Mark Greenway ", Role = "Vocal"}
-                   
+                        new Musician(){Name = "Mark Greenway ", Role = "Vocal"},
+                        new Musician(){Name = "Lee Dorian", Role = "Vocal"}
+
                     },
                 }
             };

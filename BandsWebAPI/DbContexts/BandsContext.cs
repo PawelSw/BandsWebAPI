@@ -9,7 +9,6 @@ namespace BandsWebAPI.DbContexts
         public DbSet<Album> Albums { get; set; } 
         public DbSet<Description> Descriptions { get; set; } 
         public DbSet<Musician> Musicians { get; set; } 
-        //public DbSet<MusicianBands> MusicianBands { get; set; }
         public BandsContext(DbContextOptions<BandsContext> options)
            : base(options)
         {

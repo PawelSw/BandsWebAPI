@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BandsWebAPI.Entities;
 using BandsWebAPI.Models;
+using NLog.LayoutRenderers.Wrappers;
 
 namespace BandsWebAPI.Profiles
 {
@@ -10,6 +11,7 @@ namespace BandsWebAPI.Profiles
         {
             CreateMap<Album, AlbumDto>();
             CreateMap<AlbumForCreationDto, Album>();
+            CreateMap<List<Album>, List<AlbumDto>>();
 
         }
     }

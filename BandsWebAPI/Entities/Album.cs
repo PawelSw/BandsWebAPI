@@ -12,7 +12,6 @@ namespace BandsWebAPI.Entities
         [MaxLength(50)]
         public string Title { get; set; }
 
-
         public int DateOfRelease { get; set; }
         public Band Band { get; set; }
         public int BandId { get; set; } 
